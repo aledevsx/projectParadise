@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="zxx" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webdesign AleDevX Paradise Beach estudo Tailwind 3">
+    <meta property="og:title" content="PROTOTYPE" />
+    <meta property="og:description" content="Projeto estudo Tailwind 3" />
+    <meta property="og:type" content="WEBSITES" />
+    <meta property="og:image" content="https://aledevsx.github.io/projectParadise/img/template.jpg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:image:type" content="image/jpg" />
+    <link rel="manifest" href="site.webmanifest"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="icon" href="img/favicon.ico">
+    <meta name="theme-color" content="#ffffff" />
+    <title>Paradise Beach</title>
+    <link rel="preload" href="fonts/Raleway-Medium.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/Raleway-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/Lato-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/Lato-Bold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/Nunito-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/Nunito-Bold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="fonts/Nunito-ExtraBold.ttf" as="font" type="font/ttf" crossorigin />
+    <script src="js/script.js" defer></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="inner">
+            <div class="icon-load"></div>
+        </div>
+    </div>
+    <div class="nav-top">
+        <div class="nav-top-container">
+            <p class="p-nav-top">Welcome to <span class="text-neutral-500">Paradise</span> 
+                <span class="text-blue-400">Beach</span>
+            </p>
+            <ul class="flex">
+                <li class="mr-6">
+                    <a class="a-nav-top-phone" href="tel:+5511989898989">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align:-0.10rem;"
+                            class="h-3 pr-1 inline-block fill-blue-400" viewBox="0 0 512 512">
+                            <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 
+                            64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 
+                            368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                        </svg>+55 (11) 989898989
+                    </a>
+                </li>
+                <li>
+                    <a class="a-nav-top" href="mailto:contact@paradise.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="pr-1 h-3 inline-block fill-blue-400"
+                            viewBox="0 0 512 512">
+                            <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 
+                        19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 
+                        17.1-54 17.1-76.8 0L0 176z" />
+                        </svg>aledevsx@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="nav navbar">
+        <div class="navbar-container">
+            <a href="#"> <img class="w-20 md:w-auto" src="img/waves.png" width="127" height="18"
+                    alt="logo paradise beatch"> </a>
+            <div class="media_button navbar-btn">
+                <button class="main_media_button" id="mediaButton" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        enable-background="new 0 0 32 32" height="32px" id="Слой_1" version="1.1" viewBox="0 0 32 32"
+                        width="32px" xml:space="preserve">
+                        <g id="Settings">
+                            <path d="M1,7h30c0.552,0,1-0.448,1-1c0-0.552-0.448-1-1-1H1C0.448,5,0,5.448,0,6C0,6.552,0.448,7,1,7z" fill="rgb(82 82 82)" />
+                            <path d="M31,25H1c-0.552,0-1,0.448-1,1c0,0.552,0.448,1,1,1h30c0.552,0,1-0.448,1-1C32,25.448,31.552,25,31,25z" fill="rgb(82 82 82)" />
+                            <path d="M28,12c-1.862,0-3.413,1.278-3.859,3H1c-0.552,0-1,0.448-1,1c0,0.552,0.448,1,1,1h23.141   
+                            c0.446,1.722,1.997,3,3.859,3c2.209,0,4-1.791,4-4C32,13.791,30.209,12,28,12z M28,18c-1.105,0-2-0.896-2-2c0-1.104,0.895-2,2-2   
+                            s2,0.895,2,2C30,17.104,29.105,18,28,18z" fill="rgb(82 82 82)" /></g><g /><g /><g /><g /><g /><g />
+                    </svg>
+                </button>
+            </div>
+            <div class="main_list navbar-list" id="mainListDiv">
+                <ul class="navbar-ul">
+                    <li class="py-2"><a class="a-navbar" href="#">Home</a></li>
+                    <li class="py-2"><a class="a-navbar" href="#">About</a></li>
+                    <li class="py-2"><a class="a-navbar" href="#">Work</a></li>
+                    <li class="py-2"><a class="a-navbar" href="#">Design</a></li>
+                    <li class="py-2"><a class="a-navbar" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="banner" id="home">
+        <div class="header-container">
+            <p class="p-1-header">
+                Relax your mind
+                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-3 fill-white" viewBox="0 0 512 512">
+                    <path d="M160.8 96.5c14 17 31 30.9 49.5 42.2c25.9 15.8 53.7 25.9 77.7 31.6V138.8C265.8 108.5 250 
+                    71.5 248.6 28c-.4-11.3-7.5-21.5-18.4-24.4c-7.6-2-15.8-.2-21 5.8c-13.3 15.4-32.7 44.6-48.4 87.2zM320 
+                    144v30.6l0 0v1.3l0 0 0 32.1c-60.8-5.1-185-43.8-219.3-157.2C97.4 40 87.9 32 76.6 32c-7.9 0-15.3 3.9-18.8 
+                    11C46.8 65.9 32 112.1 32 176c0 116.9 80.1 180.5 118.4 202.8L11.8 416.6C6.7 418 2.6 421.8 .9 426.8s-.8 10.6 
+                    2.3 14.8C21.7 466.2 77.3 512 160 512c3.6 0 7.2-1.2 10-3.5L245.6 448H320c88.4 0 160-71.6 160-160V128l29.9-44.9c1.3-2 
+                    2.1-4.4 2.1-6.8c0-6.8-5.5-12.3-12.3-12.3H400c-44.2 0-80 35.8-80 80zm80 16c-8.8 0-16-7.2-16-16s7.2-16 16-16s16 7.2 16 
+                    16s-7.2 16-16 16z"/>
+                </svg>
+            </p>
+            <h1 class="h1-header">PARADISE BEACH</h1>
+            <p class="p-2-header">Lorem iaculis purus consequat
+                sem cure dign issim. Taculis purus consequat sem.</p>
+            <p class="p-3-header"><a href="#" class="a-header">Learn
+                    more</a>
+                <span class="hidden text-white md:block">
+                    <span class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-6 mr-1 h-4 fill-white" viewBox="0 0 576 512">
+                        <path d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 
+                        551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 
+                        435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 
+                        22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 
+                        78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 
+                        387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 
+                        343.9 194.3 340.5 187.2L287.9 78.95z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-1 h-4 fill-white" viewBox="0 0 576 512">
+                        <path d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 
+                        551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 
+                        435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 
+                        22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 
+                        78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 
+                        387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 
+                        343.9 194.3 340.5 187.2L287.9 78.95z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-1 h-4 fill-white" viewBox="0 0 576 512">
+                        <path d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 
+                        551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 
+                        435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 
+                        22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 
+                        78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 
+                        387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 
+                        343.9 194.3 340.5 187.2L287.9 78.95z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-1 h-4 fill-white" viewBox="0 0 576 512">
+                        <path d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 
+                        551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 
+                        435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 
+                        22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 
+                        78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 
+                        387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 
+                        343.9 194.3 340.5 187.2L287.9 78.95z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 fill-white" viewBox="0 0 576 512">
+                        <path d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 
+                        551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 
+                        435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 
+                        22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 
+                        78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 
+                        387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 
+                        343.9 194.3 340.5 187.2L287.9 78.95z"/>
+                    </svg>
+                </span>
+                </span>
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="div-mobile">
+            <div class="div-bg-mobile">
+                <p class="p-div-mobile">
+                    Somos navegantes num mar que não conhecemos; que Ele conserve sempre nossa coragem em aceitar esse
+                    mistério.</p>
+            </div>
+        </div>
+
+        <section class="container max-w-1200 mt-4">
+            <h2 class="h2-favorite">OUR FAVORITE BEACH</h2>
+            <p class="p-1-favorite">Lorem,
+                ipsum dolor sit amet
+                consectetur adipisicing elit. Tempore incidunt, minus voluptatum beatae.</p>
+            <div class="grid-favorite">
+                <div class="max-w-508 mx-auto">
+                    <picture>
+                        <source type="image/webp" srcset="img/maldivas.webp">
+                        <source type="image/jpeg" srcset="img/maldivas.jpg">
+                        <img src="img/maldivas.jpg" width="508" height="336" class="favorite-img"
+                            alt="Maldivas" />
+                    </picture>
+                    <a href="#!" class="a-favorite">Maldives</a>
+                </div>
+                <div class="max-w-508 mx-auto">
+                    <picture>
+                        <source type="image/webp" srcset="img/bora-bora.webp">
+                        <source type="image/jpeg" srcset="img/bora-bora.jpg">
+                        <img src="img/bora-bora.jpg" width="508" height="336" class="favorite-img"
+                            alt="Bora bora" />
+                    </picture>
+                    <a href="#!" class="a-favorite">Bora Bora</a>
+                </div>
+                <div class="max-w-508 mx-auto">
+                    <picture>
+                        <source type="image/webp" srcset="img/seychelles.webp">
+                        <source type="image/jpeg" srcset="img/seychelles.jpg">
+                        <img src="img/seychelles.jpg" width="508" height="336" class="favorite-img"
+                            alt="Seychelles" />
+                    </picture>
+                    <a href="#!" class="a-favorite">Seychelles</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-blue-50 md:mt-24">
+            <div class="container-relax">
+                <h2 class="h2-relax">KEEP YOUR MIND
+                    RELAXED</h2>
+                <p class="p-1-relax">Lorem, ipsum dolor sit amet
+                    consectetur adipisicing.</p>
+            </div>
+            <div class="grid-relax">
+                <div class="px-relax">
+                    <picture>
+                        <source type="image/webp" srcset="img/relax.webp">
+                        <source type="image/jpeg" srcset=".img/relax.jpg">
+                        <img class="relax-img" src="img/relax.jpg" width="750" height="475" alt="">
+                    </picture>
+                </div>
+                <div class="px-relax">
+                    <h3 class="h3-relax">Relax in Paradise</h3>
+                    <p class="p-2-relax">Lorem iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Illum eius voluptatem, <a class="a-relax" href="#!">doloremque culpa dicta hic</a>,
+                        similique ipsam minus
+                        laudantium molestiae unde! Lorem ipsum dolor sit amet consectetur adipisicing elit,
+                        repellendus! A, quisquam aperiam aspernatur incidunt adipisci omnis. Ipsum provident, dolor
+                        rerum accusantium voluptas excepturi obcaecati tempora!</p>
+                    <p class="p-2-relax">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+                        impedit sint? <a class="a-relax" href="#!">Officiis</a>,
+                        repellendus! A, quisquam aperiam aspernatur incidunt adipisci omnis. Ipsum provident, dolor
+                        rerum accusantium voluptas excepturi obcaecati tempora!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container max-w-1200">
+            <h2 class="h2-cocktail">ENJOY A COCKTAIL</h2>
+            <p class="p-1-cocktail">Lorem, ipsum dolor sit amet
+                consectetur adipisicing.</p>
+            <div class="grid-cocktail">
+                <div class="md:col-span-2">
+                    <picture>
+                        <source type="image/webp" srcset="img/cocktail.webp">
+                        <source type="image/jpeg" srcset="img/cocktail.jpg">
+                        <img src="img/cocktail.jpg" width="573" height="440" class="cocktail-img"
+                            alt="cocktail" />
+                    </picture>
+                </div>
+                <div class="mx-auto">
+                    <picture>
+                        <source type="image/webp" srcset="img/model-1.webp">
+                        <source type="image/jpeg" srcset="img/model-1.jpg">
+                        <img src="img/model-1.jpg" width="382" height="600" class="cocktail-img"
+                            alt="Model 1" />
+                    </picture>
+                </div>
+                <div class="mx-auto">
+                    <picture>
+                        <source type="image/webp" srcset="img/model-2.webp">
+                        <source type="image/jpeg" srcset="img/model-2.jpg">
+                        <img src="img/model-2.jpg" width="382" height="600" class="cocktail-img"
+                            alt="model-2" />
+                    </picture>
+                </div>
+            </div>
+            <p class="p-2-cocktail">
+                Check out more <a href="#!" aria-label="Bar" class="a-cocktail">BAR & EVENTS</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align:0.05rem;" class="ml-1.5 h-4 inline-block fill-yellow-500" viewBox="0 0 576 512">
+                        <path d="M432 240c53 0 96-43 96-96s-43-96-96-96c-35.5 0-66.6 19.3-83.2 48H296.2C316 40.1 369.3 0 432 0c79.5 0 144 
+                        64.5 144 144s-64.5 144-144 144c-27.7 0-53.5-7.8-75.5-21.3l35.4-35.4c12.2 5.6 25.8 8.7 40.1 8.7zM1.8 142.8C5.5 133.8 
+                        14.3 128 24 128H392c9.7 0 18.5 5.8 22.2 14.8s1.7 19.3-5.2 26.2l-177 177V464h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H208 
+                        120c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V345.9L7 169c-6.9-6.9-8.9-17.2-5.2-26.2z"/>
+                    </svg>
+            </p>
+        </section>
+
+        <section class="bg-blue-50">
+            <div class="container max-w-1200">
+                <h2 class="h2-testemonial">TESTIMONIALS</h2>
+                <p class="p-1-testemonial">Lorem, ipsum dolor sit ametconsectetur adipisicing.</p>
+            </div>
+            <div class="grid-testemonial">
+                <div>
+                    <div class="testemonial">
+                        <h3 class="h3-testemonial">Amazing Place</h3>
+                        <p class="p-2-testemonial"> Lorem ipsum dolor sit amet,
+                            consectetur adipis icing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.</p>
+                        <span class="mt-3 mb-4 text-sm justify-center flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4 mr-1" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4 mr-1" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4 mr-1" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4 mr-1" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        </span>
+                    </div>
+                    <div class="relative pl-5">
+                        <div class="table-cell align-top">
+                            <picture>
+                                <source type="image/webp" srcset="img/aledevx.webp">
+                                <source type="image/jpeg" srcset="img/aledevx.jpg">
+                                <img class="max-w-max shadow-lg block rounded-full" src="img/aledevx.jpg"
+                                    alt="Ale Devx" width="80" height="80">
+                            </picture>
+                        </div>
+                        <div class="table-cell align-top">
+                            <div class="pt-4 pl-4">
+                                <h3 class="font-bold">Ale Devx</h3>
+                                <p class="text-s text-neutral-500">SP, Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="testemonial">
+                        <h3 class="h3-testemonial">Perfect Beach</h3>
+                        <p class="p-2-testemonial"> Lorem ipsum dolor sit amet,
+                            consectetur adipis icing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.</p>
+                        <span class="mt-3 mb-4 text-sm justify-center flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4 mr-1" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4 mr-1" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4 mr-1" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4 mr-1" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4" viewBox="0 0 576 512">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                    113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                    225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                                </svg>
+                        </span>
+                    </div>
+                    <div class="relative pl-5">
+                        <div class="table-cell align-top">
+                            <picture>
+                                <source type="image/webp" srcset="img/alicia.webp">
+                                <source type="image/jpeg" srcset="img/alicia.jpg">
+                                <img class="max-w-max block shadow-lg rounded-full" src="img/alicia.jpg"
+                                    alt="Alicia" width="80" height="80">
+                            </picture>
+                        </div>
+                        <div class="table-cell align-top">
+                            <div class="pt-4 pl-4">
+                                <h3 class="font-bold">Alicia W.</h3>
+                                <p class="text-s text-neutral-500">NY, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="testemonial">
+                        <h3 class="h3-testemonial">Beautiful Beach</h3>
+                        <p class="p-2-testemonial"> Lorem ipsum dolor sit amet,
+                            consectetur adipis icing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.</p>
+                        <span class="mt-3 mb-4 text-sm justify-center flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4 mr-1" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4 mr-1" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4 mr-1" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4 mr-1" viewBox="0 0 576 512">
+                                <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-yellow-500 h-4" viewBox="0 0 576 512">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 
+                                    113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 
+                                    225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="relative pl-5">
+                        <div class="table-cell align-top">
+                            <picture>
+                                <source type="image/webp" srcset="img/kimberly.webp">
+                                <source type="image/jpeg" srcset="img/kimberly.jpg">
+                                <img class="max-w-max block shadow-lg rounded-full" src="img/kimberly.jpg"
+                                    alt="Kimberly" width="80" height="80">
+                            </picture>
+                        </div>
+                        <div class="table-cell align-top">
+                            <div class="pt-4 pl-4">
+                                <h3 class="font-bold">Kimberly S.</h3>
+                                <p class="text-s text-neutral-500">Roma, Italy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="travel">
+            <h2 class="h2-travel">OUR TRAVELERS</h2>
+            <p class="p-1-travel">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. </p>
+            <div class="grid-maldives-1">
+                <div class="grid-maldives-2">
+                    <div class="md:col-span-2">
+                        <picture>
+                            <source type="image/webp" srcset="img/maldives-1.webp">
+                            <source type="image/jpeg" srcset=".img/maldives-1.jpg">
+                            <img src="img/maldives-1.jpg" class="img-travel" width="650" height="534" alt="Maldives">
+                        </picture>
+                        <a href="#!" class="a-travel">Maldives</a>
+                    </div>
+                    <div class="grid-maldives-3">
+                        <div class="">
+                            <h3 class="h3-travel pt-2.55">Most Beautiful Place In The World - Maldives </h3>
+                            <p class="px-4 pt-3 pb-8 md:pb-0">Venture capital food-truck minimum viable product ideate
+                                pitch
+                                deck
+                                experiential
+                                cortado affordances parallax..</p>
+                        </div>
+                        <div class="order-first md:order-last">
+                            <picture>
+                                <source type="image/webp" srcset="img/maldives-2.webp">
+                                <source type="image/jpeg" srcset=".img/maldives-2.jpg">
+                                <img src="img/maldives-2.jpg" class="img-travel" width="600" height="400" alt="Maldives">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-bora-bora">
+                    <div class="shadow-md">
+                        <picture>
+                            <source type="image/webp" srcset="img/bora-bora-1.webp">
+                            <source type="image/jpeg" srcset=".img/bora-bora-1.jpg">
+                            <img src="img/bora-bora-1.jpg" class="img-travel" width="600" height="400" alt="Bora bora">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="h3-travel">Paradise - Bora Bora </h3>
+                            <p class="pb-8 px-4">Qualitative ship it user story grok SpaceTeam waterfall is so 2000 and
+                                late
+                                quantitative vs.Qualitative ship it user story grok SpaceTeam waterfall is so 2000 and
+                                late
+                                quantitative vs.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <picture>
+                            <source type="image/webp" srcset="img/bora-bora-2.webp">
+                            <source type="image/jpeg" srcset=".img/bora-bora-2.jpg">
+                            <img src="img/bora-bora-2.jpg" class="img-travel" width="600" height="400" alt="Bora bora">
+                        </picture>
+                        <a href="#!" class="a-travel">Bora Bora</a>
+                    </div>
+                </div>
+                <div class="grid-seychelles">
+                    <div class="">
+                        <picture>
+                            <source type="image/webp" srcset="img/seychelles-1.webp">
+                            <source type="image/jpeg" srcset=".img/seychelles-1.jpg">
+                            <img src="img/seychelles-1.jpg" class="img-travel" width="600" height="400" alt="Seychelles">
+                        </picture>
+                        <a href="#!" class="a-travel">Seychelles</a>
+                    </div>
+
+                    <div class="shadow-md order-first md:order-last">
+                        <picture>
+                            <source type="image/webp" srcset="img/seychelles-2.webp">
+                            <source type="image/jpeg" srcset=".img/seychelles-2.jpg">
+                            <img src="img/seychelles-2.jpg" class="img-travel" width="600" height="400" alt="Seychelles">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="h3-travel">
+                                Paradise - Seychelles </h3>
+                            <p class="pb-8 px-4">Ship it integrate prototype fund human-centered design integrate big
+                                data
+                                Qualitative ship it user story grok SpaceTeam waterfall is so 2000 and late
+                                quantitative vs. .</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <p class="p-2-travel">
+                Check out more <a href="#!" aria-label="Places" class="a-cocktail">BEACH & PLACES</a> 
+                <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align:-0.05rem;" class="ml-1.5 h-4 inline-block fill-blue-500" viewBox="0 0 512 512">
+                    <path d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 
+                    15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 
+                    24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 
+                    0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 
+                    17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 
+                    48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 
+                    1.8-18.2 1.8-27.5zm48 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/>
+                </svg>
+            </p>
+        </section>
+
+        <section class="banner-2 pt-16 pb-24">
+            <div class="container max-w-1200">
+                <h2 class="h2-news">
+                    NEWS LETTERS
+                </h2>
+                <p class="p-news">Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. </p>
+                <div class="grid-news">
+                    <form class="relative text-center" action="#!" method="post">
+                        <label for="email">
+                            <input type="email" class="email-news" placeholder="ale.devx@paradise.com" id="email">
+                        </label>
+                        <button type="submit" class="btn-news" aria-label="Enviar">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="p-2 pr-2.5 h-8 fill-blue-500" aria-hidden="true" viewBox="0 0 512 512">
+                                <path d="M501.6 4.186c-7.594-5.156-17.41-5.594-25.44-1.063L12.12 267.1C4.184 271.7-.5037 280.3 .0431 
+                                289.4c.5469 9.125 6.234 17.16 14.66 20.69l153.3 64.38v113.5c0 8.781 4.797 16.84 12.5 21.06C184.1 511 188 
+                                512 191.1 512c4.516 0 9.038-1.281 12.99-3.812l111.2-71.46l98.56 41.4c2.984 1.25 6.141 1.875 9.297 1.875c4.078 0 
+                                8.141-1.031 11.78-3.094c6.453-3.625 10.88-10.06 11.95-17.38l64-432C513.1 18.44 509.1 9.373 501.6 4.186zM369.3 119.2l-187.1 
+                                208.9L78.23 284.7L369.3 119.2zM215.1 444v-49.36l46.45 19.51L215.1 444zM404.8 421.9l-176.6-74.19l224.6-249.5L404.8 421.9z"/>
+                            </svg>
+                        </button>
+                        <label class="label-news">
+                            <input name="terms" class="terms-news" type="checkbox" value="1" required="">I have read and
+                            agree to the terms &amp; conditions
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-16 pb-16">
+            <div class="container max-w-1200">
+                <h2 class="h2-news text-neutral-600">
+                    CONTACT US
+                </h2>
+                <p class="p-contact">Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. </p>
+                <div class="grid-form-contact">
+                    <form class="relative text-center" action="#!" method="get">
+                        <label for="name">
+                            <input type="text" class="form-contact mt-0" placeholder="Name" id="name">
+                        </label>
+                        <label for="email-contact">
+                            <input type="email" class="form-contact" placeholder="E-mail" id="email-contact">
+                        </label>
+                        <label for="msg" class="">
+                            <textarea class="form-contact" rows="5" placeholder="Message" id="msg"></textarea>
+                        </label>
+                        <button type="submit" class="btn-form">Send Message</button>
+                    </form>
+                    <hr class="sm:hidden border-blue-300">
+                    <div class="card-contact">
+                        <h3 class="h3-card-contact">Can't Find an Answer?</h3>
+                        <p class="mt-2">Ask Our Support Team</p>
+                        <p class="p-card-contact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem a
+                            delectus ullam. Voluptate impedit dolore accusantiu.</p>
+                        <a href="#!" class="a-btn-card-contact">AleDevx
+                            <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align:-0.15rem;" class="ml-0.5 fill-white h-4 inline-block" viewBox="0 0 496 512">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 
+                                1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 
+                                2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 
+                                17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 
+                                58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 
+                                20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 
+                                25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 
+                                496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 
+                                1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 
+                                6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 
+                                0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-50">
+        <div class="top-footer">
+            <h2 class="h2-top-footer">PARADISE BEACH</h2>
+            <p class="p-top-footer">keep calm and carry on. Relax in
+                Paradise Beach</p>
+        </div>
+        <section>
+            <div class="grid-footer">
+                <div class="col-span-2 md:col-auto">
+                    <h3 class="text-lg font-bold mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align:-0.10rem;" class="fill-blue-400 h-4 mr-1.5 inline-block" viewBox="0 0 512 512">
+                            <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 
+                            0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464zM255.1 
+                            176C255.1 176 255.1 176 255.1 176c21.06 0 40.92 8.312 55.83 23.38c9.375 9.344 24.53 9.5 33.97 
+                            .1562c9.406-9.344 9.469-24.53 .1562-33.97c-24-24.22-55.95-37.56-89.95-37.56c0 0 .0313 0 0 0c-33.97 
+                            0-65.95 13.34-89.95 37.56c-49.44 49.88-49.44 131 0 180.9c24 24.22 55.98 37.56 89.95 37.56c.0313 0 0 0 0 
+                            0c34 0 65.95-13.34 89.95-37.56c9.312-9.438 9.25-24.62-.1562-33.97c-9.438-9.312-24.59-9.219-33.97 .1562c-14.91 
+                            15.06-34.77 23.38-55.83 23.38c0 0 .0313 0 0 0c-21.09 0-40.95-8.312-55.89-23.38c-30.94-31.22-30.94-82.03 
+                            0-113.3C214.2 184.3 234 176 255.1 176z"/>
+                        </svg>PARADISE
+                    </h3>
+                    <p>Roin gravida dolor sit amet lacus accumsan et viverra justo lacus accumsan. Dolor
+                        sit one.
+                    </p>
+                </div>
+                <div class="lg:mx-auto">
+                    <h3 class="h3-footer">PRODUCTS</h3>
+                    <p class="p-footer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-footer"
+                            style="height:.813rem;" viewBox="0 0 448 512">
+                            <path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 
+                            278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 
+                            92.88 426.1 92.88 438.6 105.4H438.6z" />
+                        </svg>
+                        <a class="a-footer" href="#!">Webdesign</a>
+                    </p>
+                    <p class="p-footer"><svg xmlns="http://www.w3.org/2000/svg" class="svg-footer"
+                            style="height:.813rem;" viewBox="0 0 448 512">
+                            <path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 
+                            278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 
+                            426.1 92.88 438.6 105.4H438.6z" />
+                        </svg>
+                        <a class="a-footer" href="#!">Landingpage</a>
+                    </p>
+                    <p class="p-footer"><svg xmlns="http://www.w3.org/2000/svg" class="svg-footer"
+                            style="height:.813rem;" viewBox="0 0 448 512">
+                            <path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 
+                            278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 
+                            426.1 92.88 438.6 105.4H438.6z" />
+                        </svg>
+                        <a class="a-footer" href="#!">Websites</a>
+                    </p>
+                    <p class="p-footer"><svg xmlns="http://www.w3.org/2000/svg" class="svg-footer"
+                            style="height:.813rem;" viewBox="0 0 448 512">
+                            <path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 
+                            278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 
+                            426.1 92.88 438.6 105.4H438.6z" />
+                        </svg>
+                        <a class="a-footer" href="#!">Frameworks</a>
+                    </p>
+                </div>
+                <div class="lg:mx-auto">
+                    <h3 class="h3-footer">ABOUT US</h3>
+                    <p class="p-footer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-footer"
+                            style="height:.813rem; vertical-align: baseline;" viewBox="0 0 384 512">
+                            <path d="M336 0C362.5 0 384 21.49 384 48V464C384 490.5 362.5 512 336 512H240V432C240 405.5 218.5 384 192 
+                                384C165.5 384 144 405.5 144 432V512H48C21.49 512 0 490.5 0 464V48C0 21.49 21.49 0 48 0H336zM64 272C64 
+                                280.8 71.16 288 80 288H112C120.8 288 128 280.8 128 272V240C128 231.2 120.8 224 112 224H80C71.16 224 64 231.2 
+                                64 240V272zM176 224C167.2 224 160 231.2 160 240V272C160 280.8 167.2 288 176 288H208C216.8 288 224 280.8 224 
+                                272V240C224 231.2 216.8 224 208 224H176zM256 272C256 280.8 263.2 288 272 288H304C312.8 288 320 280.8 320 272V240C320 
+                                231.2 312.8 224 304 224H272C263.2 224 256 231.2 256 240V272zM80 96C71.16 96 64 103.2 64 112V144C64 152.8 71.16 160 
+                                80 160H112C120.8 160 128 152.8 128 144V112C128 103.2 120.8 96 112 96H80zM160 144C160 152.8 167.2 160 176 160H208C216.8 
+                                160 224 152.8 224 144V112C224 103.2 216.8 96 208 96H176C167.2 96 160 103.2 160 112V144zM272 96C263.2 96 256 103.2 
+                                256 112V144C256 152.8 263.2 160 272 160H304C312.8 160 320 152.8 320 144V112C320 103.2 312.8 96 304 96H272z" />
+                        </svg>
+                        <a class="a-footer" href="#!">Company</a>
+                    </p>
+                    <p class="p-footer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-footer" style="height:.813rem;"
+                            viewBox="0 0 512 512">
+                            <path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 
+                            0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 
+                            0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z" />
+                        </svg>
+                        <a class="a-footer" href="#!">Office</a>
+                    </p>
+                    <p class="p-footer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-footer" style="height:.813rem;"
+                            viewBox="0 0 512 512">
+                            <path d="M280 145.3V112h16C309.3 112 320 101.3 320 88S309.3 64 296 64H215.1C202.7 64 192 74.75 192 87.1S202.7 112 215.1 
+                            112H232v33.32C119.6 157.3 32 252.4 32 368h448C480 252.4 392.4 157.3 280 145.3zM488 400h-464C10.75 400 0 410.7 0 423.1C0 
+                            437.3 10.75 448 23.1 448h464c13.25 0 24-10.75 24-23.1C512 410.7 501.3 400 488 400z" />
+                        </svg>
+                        <a class="a-footer" href="#!">Services</a>
+                    </p>
+                    <p class="p-footer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-footer" style="height:.813rem;"
+                            viewBox="0 0 512 512">
+                            <path d="M320 96H192L144.6 24.88C137.5 14.24 145.1 0 157.9 0H354.1C366.9 0 374.5 14.24 367.4 24.88L320 96zM192 128H320C323.8 
+                            130.5 328.1 133.3 332.1 136.4C389.7 172.7 512 250.9 512 416C512 469 469 512 416 512H96C42.98 512 0 469 0 416C0 250.9 122.3 
+                            172.7 179 136.4C183.9 133.3 188.2 130.5 192 128V128zM276.1 224C276.1 212.9 267.1 203.9 255.1 203.9C244.9 203.9 235.9 212.9 235.9 
+                            224V230C230.3 231.2 224.1 232.9 220 235.1C205.1 241.9 192.1 254.5 188.9 272.8C187.1 283 188.1 292.9 192.3 301.8C196.5 310.6 203 
+                            316.8 209.6 321.3C221.2 329.2 236.5 333.8 248.2 337.3L250.4 337.9C264.4 342.2 273.8 345.3 279.7 349.6C282.2 351.4 283.1 352.8 283.4 
+                            353.7C283.8 354.5 284.4 356.3 283.7 360.3C283.1 363.8 281.2 366.8 275.7 369.1C269.6 371.7 259.7 373 246.9 371C240.9 370 230.2 366.4 
+                            220.7 363.2C218.5 362.4 216.3 361.7 214.3 361C203.8 357.5 192.5 363.2 189 373.7C185.5 384.2 191.2 395.5 201.7 398.1C202.9 399.4 204.4 
+                            399.9 206.1 400.5C213.1 403.2 226.4 407.4 235.9 409.6V416C235.9 427.1 244.9 436.1 255.1 436.1C267.1 436.1 276.1 427.1 276.1 416V410.5C281.4 
+                            409.5 286.6 407.1 291.4 405.9C307.2 399.2 319.8 386.2 323.1 367.2C324.9 356.8 324.1 346.8 320.1 337.7C316.2 328.7 309.9 322.1 303.2 317.3C291.1 
+                            308.4 274.9 303.6 262.8 299.9L261.1 299.7C247.8 295.4 238.2 292.4 232.1 288.2C229.5 286.4 228.7 285.2 228.5 284.7C228.3 284.3 227.7 283.1 228.3 
+                            279.7C228.7 277.7 230.2 274.4 236.5 271.6C242.1 268.7 252.9 267.1 265.1 268.1C269.5 269.7 283 272.3 286.9 273.3C297.5 276.2 308.5 269.8 311.3 
+                            259.1C314.2 248.5 307.8 237.5 297.1 234.7C292.7 233.5 282.7 231.5 276.1 230.3L276.1 224z" />
+                        </svg>
+                        <a class="a-footer" href="#!">Investment</a>
+                    </p>
+                </div>
+                <div class="lg:mx-auto col-span-2 md:col-auto">
+                    <h3 class="h3-footer">CONTACT</h3>
+                    <p class="p-footer"><svg xmlns="http://www.w3.org/2000/svg" class="svg-footer"
+                            style="height:.813rem;" viewBox="0 0 576 512">
+                            <path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 
+                            494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 
+                            366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 
+                            511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 
+                            3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 
+                            255.5L575.8 255.5z" />
+                        </svg>São Paulo - SP
+                    </p>
+                    <p class="p-footer"><svg xmlns="http://www.w3.org/2000/svg" class="svg-footer"
+                            style="height:.813rem;" viewBox="0 0 512 512">
+                            <path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 
+                            313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 
+                            176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z" />
+                        </svg>aledevsx@gmail.com
+                    </p>
+                    <p class="p-footer text-s pt-1"><svg xmlns="http://www.w3.org/2000/svg" class="svg-footer"
+                            style="height:.813rem;" viewBox="0 0 512 512">
+                            <path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 
+                            24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 
+                            69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z" />
+                        </svg>+55 11 988949904</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="bottom">
+            <p class="p-bottom">
+                <a target="_blank" href="https://github.com/aledevsx" class="a-bottom">AleDevX
+                    <svg xmlns="http://www.w3.org/2000/svg" class="px-1 h-4.5 align-baseline" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 
+                        3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 
+                        2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 
+                        69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 
+                        0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 
+                        0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 
+                        69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 
+                        83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 
+                        5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 
+                        35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 
+                        5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" fill="rgb(255, 255, 255)" />
+                    </svg>2022
+                </a>
+                <a href="#" aria-label="top" class="flex items-center justify-center absolute top-7 right-9 w-8 h-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 animate-top" viewBox="0 0 384 512">
+                        <path d="M374.6 246.6C368.4 252.9 360.2 256 352 256s-16.38-3.125-22.62-9.375L224 141.3V448c0 17.69-14.33 
+                        31.1-31.1 31.1S160 465.7 160 448V141.3L54.63 246.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 
+                        32.75-12.5 45.25 0l160 160C387.1 213.9 387.1 234.1 374.6 246.6z" fill="rgb(255, 255, 255)" />
+                    </svg>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/modernizr-custom.js"></script>
+</body>
+
+</html>
