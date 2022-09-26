@@ -2287,14 +2287,14 @@ p {
 }
 
 .webp .card-contact {
-  background: linear-gradient(#00b2ff, #3b82f624), url(/img/banner-2.webp);
+  background: linear-gradient(#00b2ff, #3b82f624), url(./img/banner-2.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .no-webp .card-contact {
-  background: linear-gradient(#00b2ff, #3b82f624), url(/img/banner-2.jpg);
+  background: linear-gradient(#00b2ff, #3b82f624), url(./img/banner-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2890,28 +2890,28 @@ p {
 }
 
 .webp .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/banner.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .no-webp .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/banner.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./img/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .webp .banner-2 {
-  background: linear-gradient(#00b2ff, #3b82f624), url(/img/banner-2.webp);
+  background: linear-gradient(#00b2ff, #3b82f624), url(./img/banner-2.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .no-webp .banner-2 {
-  background: linear-gradient(#00b2ff, #3b82f624), url(/img/banner-2.jpg);
+  background: linear-gradient(#00b2ff, #3b82f624), url(./img/banner-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2936,7 +2936,7 @@ p {
 
   font-display: fallback;
 
-  src: url(/fonts/Raleway-Medium.ttf) format('truetype');
+  src: url(./fonts/Raleway-Medium.ttf) format('truetype');
 }
 
 @font-face {
@@ -2948,7 +2948,7 @@ p {
 
   font-display: fallback;
 
-  src: url(/fonts/Raleway-Regular.ttf) format('truetype');
+  src: url(./fonts/Raleway-Regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -2960,7 +2960,7 @@ p {
 
   font-display: fallback;
 
-  src: url(/fonts/Lato-Regular.ttf) format('truetype');
+  src: url(./fonts/Lato-Regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -2972,7 +2972,7 @@ p {
 
   font-display: fallback;
 
-  src: url(/fonts/Lato-Bold.ttf) format('truetype');
+  src: url(./fonts/Lato-Bold.ttf) format('truetype');
 }
 
 @font-face {
@@ -2986,7 +2986,7 @@ p {
 
   font-named-instance: 'Regular';
 
-  src: url("/fonts/Nunito-Regular.ttf") format("truetype");
+  src: url("./fonts/Nunito-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -3000,7 +3000,7 @@ p {
 
   font-named-instance: 'Bold';
 
-  src: url("/fonts/Nunito-Bold.ttf") format("truetype");
+  src: url("./fonts/Nunito-Bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -3014,7 +3014,7 @@ p {
 
   font-named-instance: 'ExtraBold';
 
-  src: url("/fonts/Nunito-ExtraBold.ttf") format("truetype");
+  src: url("./fonts/Nunito-ExtraBold.ttf") format("truetype");
 }
 
 .preloader{
