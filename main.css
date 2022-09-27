@@ -3017,78 +3017,111 @@ p {
   src: url("./fonts/Nunito-ExtraBold.ttf") format("truetype");
 }
 
-.preloader{
+.preloader {
   position: fixed;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-color: #0093c9e6;
-  z-index: 999;
+  z-index: 50;
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  opacity: 0.75;
 }
 
-.preloader .inner {
+.inner {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .icon-load {
-  display: inline-block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  display: inline-block;
 }
 
-.icon-load:after {
-  content: " ";
+.icon-load::after {
+  content: var(--tw-content);
   display: block;
-  border-radius: 50%;
-  width: 0;
-  height: 0;
-  margin: 8px;
-  box-sizing: border-box;
-  border: 32px solid white;
-  border-color: white transparent white transparent;
-  -webkit-animation: icon-load 1.2s infinite;
-  animation: icon-load 1.2s infinite;
 }
 
-@-webkit-keyframes icon-load {
-  0% {
-    transform: rotate(0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  50% {
-    transform: rotate(900deg);
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  100% {
-    transform: rotate(1800deg);
+@-webkit-keyframes spin {
+  to {
+    content: var(--tw-content);
+    transform: rotate(360deg);
   }
 }
 
-@keyframes icon-load {
-  0% {
-    transform: rotate(0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+@keyframes spin {
+  to {
+    content: var(--tw-content);
+    transform: rotate(360deg);
   }
+}
 
-  50% {
-    transform: rotate(900deg);
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
+.icon-load::after {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+  border-radius: 9999px;
+  border-width: 32px;
+  border-top-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
+  border-left-color: transparent;
+  content: var(--tw-content);
+  border-right-color: transparent;
+}
+.after\:block::after {
+  content: var(--tw-content);
+  display: block;
+}
 
-  100% {
-    transform: rotate(1800deg);
+@keyframes spin {
+  to {
+    content: var(--tw-content);
+    transform: rotate(360deg);
   }
+}
+
+.after\:animate-spin::after {
+  content: var(--tw-content);
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.after\:rounded-full::after {
+  content: var(--tw-content);
+  border-radius: 9999px;
+}
+
+.after\:border-32::after {
+  content: var(--tw-content);
+  border-width: 32px;
+}
+
+.after\:border-t-white::after {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-top-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.after\:border-b-white::after {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.after\:border-l-transparent::after {
+  content: var(--tw-content);
+  border-left-color: transparent;
+}
+
+.after\:border-r-transparent::after {
+  content: var(--tw-content);
+  border-right-color: transparent;
 }
 
 @media (min-width: 640px) {
